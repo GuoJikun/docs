@@ -9,5 +9,8 @@
     "sass": "^1.77.5",
     "vitepress": "^1.2.3",
     "vue": "^3.4.27"
+  },
+  "dependencies": {
+    "@ivy-design/ce": "^1.7.2"
   }
 }
