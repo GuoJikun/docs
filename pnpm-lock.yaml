@@ -8,6 +8,15 @@ dependencies:
   '@ivy-design/ce':
     specifier: ^1.7.2
     version: 1.7.2
+  '@jkun/watermark-vue':
+    specifier: ^1.2.1
+    version: 1.2.1
+  fox-preview-image:
+    specifier: ^3.0.0
+    version: 3.0.0(vue@3.4.27)
+  yak-barcode:
+    specifier: ^1.1.1
+    version: 1.1.1(jsbarcode@3.11.6)
 
 devDependencies:
   sass:
@@ -486,6 +495,14 @@ packages:
       - typescript
     dev: false
 
+  /@jkun/watermark-vue@1.2.1:
+    resolution: {integrity: sha512-e+uwh62/ByCxOx9T8TauUMke/clz3FxquO8t4Ze6bO5yixizR1W7E+oeUeeqeXijLPSK9VjU2kGAtE+IcxeJkQ==}
+    dependencies:
+      vue: 3.4.27
+    transitivePeerDependencies:
+      - typescript
+    dev: false
+
   /@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
@@ -945,6 +962,18 @@ packages:
       tabbable: 6.2.0
     dev: true
 
+  /fox-preview-image@3.0.0(vue@3.4.27):
+    resolution: {integrity: sha512-7L/gOlLxAdMnkpaefprDkGDHRyuEoEqn8TREsknEu+zTVkiEXfNK2AH5wj9spijPggNh++IBRiZMAV4l4KBOqg==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      vue: ^3.4.21
+    dependencies:
+      '@vueuse/core': 10.11.0(vue@3.4.27)
+      vue: 3.4.27
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+    dev: false
+
   /fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -991,6 +1020,10 @@ packages:
     resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
     engines: {node: '>=0.12.0'}
     dev: true
+
+  /jsbarcode@3.11.6:
+    resolution: {integrity: sha512-G5TKGyKY1zJo0ZQKFM1IIMfy0nF2rs92BLlCz+cU4/TazIc4ZH+X1GYeDRt7TKjrYqmPfTjwTBkU/QnQlsYiuA==}
+    dev: false
 
   /magic-string@0.30.10:
     resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
@@ -1243,3 +1276,14 @@ packages:
       '@vue/runtime-dom': 3.4.27
       '@vue/server-renderer': 3.4.27(vue@3.4.27)
       '@vue/shared': 3.4.27
+
+  /yak-barcode@1.1.1(jsbarcode@3.11.6):
+    resolution: {integrity: sha512-xiB6WgL7QSpmBrGekY0OZlewRHdCRQu/PM0AAxtzntctF0i3uD/prF49XasbvLBqTs07hWcw0EUE6kqPa5FnuA==}
+    peerDependencies:
+      jsbarcode: ^3.11.5
+    dependencies:
+      jsbarcode: 3.11.6
+      vue: 3.4.27
+    transitivePeerDependencies:
+      - typescript
+    dev: false

@@ -9,19 +9,36 @@ export default defineConfig({
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            { text: "Home", link: "/" },
-            { text: "Examples", link: "/markdown-examples" },
-        ],
-
-        sidebar: [
+            { text: "Volta 中文文档", link: "https://volta.jikun.dev" },
+            { text: "StencilJS 中文文档", link: "https://stenciljs.jikun.dev" },
             {
-                text: "Examples",
+                text: "组件文档",
                 items: [
-                    { text: "Markdown Examples", link: "/markdown-examples" },
-                    { text: "Runtime API Examples", link: "/api-examples" },
+                    { text: "水印", link: "/components/watermark-vue" },
+                    { text: "图片预览", link: "/components/preview-image" },
+                    { text: "条形码", link: "/components/barcode" },
                 ],
             },
         ],
+
+        sidebar: {
+            "/components/": [
+                {
+                    text: "组件文档",
+                    items: [
+                        {
+                            text: "watermark 水印",
+                            link: "/components/watermark-vue",
+                        },
+                        {
+                            text: "previewImage 图片预览",
+                            link: "/components/preview-image",
+                        },
+                        { text: "barcode 条形码", link: "/components/barcode" },
+                    ],
+                },
+            ],
+        },
 
         editLink: {
             text: "在 GitHub 上编辑此页",

@@ -5,6 +5,9 @@ import DefaultTheme from "vitepress/theme";
 import "./style.scss";
 import "@ivy-design/ce/dist/style.css";
 
+import watermark from "@jkun/watermark-vue/dist/watermark.js";
+import "@jkun/watermark-vue/dist/index.css";
+
 export default {
     extends: DefaultTheme,
     Layout: () => {
@@ -14,6 +17,7 @@ export default {
     },
     enhanceApp({ app, router, siteData }) {
         // ...
+        app.use(watermark);
         // @ts-ignore
         if (!import.meta.env.SSR) {
             import("@ivy-design/ce").then((module) => {
