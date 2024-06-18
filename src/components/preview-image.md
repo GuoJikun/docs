@@ -91,9 +91,8 @@ import { reactive } from 'vue'
 import imgA from '/images/preview-image-1.jpg'
 import imgB from '/images/preview-image-2.png'
 import imgC from '/images/preview-image-3.png'
-import foxPreviewImage from 'fox-preview-image'
+import foxPreviewImage from 'fox-preview-image/lib/preview-image.mjs'
 import "fox-preview-image/lib/style.css";
-console.log(imgA)
 
 const moduleA = reactive({
     visible: false,

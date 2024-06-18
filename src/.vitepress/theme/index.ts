@@ -21,8 +21,6 @@ export default {
         // @ts-ignore
         if (!import.meta.env.SSR) {
             import("@ivy-design/ce").then((module) => {
-                // use code
-                console.log(module);
                 const { registerComponents } = module;
                 registerComponents();
             });
