@@ -105,8 +105,8 @@ createApp().use(watermark);
 ### Props
 
 | prop    | 描述           | 类型   | 默认值     |
-| ------- | -------------- | ------ | ---------- | --- |
-| content | 内容           | string | string[]   |     |
+| ------- | -------------- | ------ | ---------- |
+| content | 内容           | string | string[]   |
 | font    | [font](#font)  | object | 见 font    |
 | gap     | 间隔           | array  | [100, 100] |
 | width   | 宽度           | string | 100%       |
