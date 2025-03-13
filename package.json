@@ -13,7 +13,7 @@
   "dependencies": {
     "@ivy-design/ce": "^1.7.2",
     "@jkun/watermark-vue": "^1.2.1",
-    "fox-preview-image": "^3.0.0",
+    "fox-preview-image": "^3.1.1",
     "yak-barcode": "^1.1.1"
   }
 }
