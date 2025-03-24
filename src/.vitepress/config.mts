@@ -20,8 +20,6 @@ export default defineConfig({
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            { text: "Volta 中文文档", link: "https://volta.jikun.dev" },
-            { text: "StencilJS 中文文档", link: "https://stenciljs.jikun.dev" },
             {
                 text: "组件文档",
                 items: [
@@ -30,6 +28,8 @@ export default defineConfig({
                     { text: "条形码", link: "/components/barcode" },
                 ],
             },
+            { text: "Volta 中文文档", link: "https://volta.jikun.dev" },
+            { text: "StencilJS 中文文档", link: "https://stenciljs.jikun.dev" },
         ],
 
         sidebar: {
