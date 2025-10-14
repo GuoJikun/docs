@@ -14,7 +14,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 
 import foxPreviewImage from "fox-preview-image"; // 引入
-import "fox-preview-image/lib/style.css";
+import "fox-preview-image/index.css";
 
 const app = createApp(App);
 // ...
@@ -190,8 +190,8 @@ import { reactive } from 'vue'
 import imgA from '/images/preview-image-1.jpg'
 import imgB from '/images/preview-image-2.png'
 import imgC from '/images/preview-image-3.png'
-import foxPreviewImage from 'fox-preview-image/lib/preview-image.mjs'
-import "fox-preview-image/lib/style.css";
+import foxPreviewImage from 'fox-preview-image'
+import "fox-preview-image/index.css";
 
 const moduleA = reactive({
     visible: false,
