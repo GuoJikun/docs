@@ -17,7 +17,6 @@ import foxPreviewImage from "fox-preview-image"; // 引入
 import "fox-preview-image/index.css";
 
 const app = createApp(App);
-// ...
 
 app.use(foxPreviewImage); // 注册组件
 ```
@@ -27,7 +26,6 @@ app.use(foxPreviewImage); // 注册组件
 <script setup>
     import { ref } from "vue";
     const visible = ref(false);
-    const visible = ref("");
 </script>
 <template>
     <for-preview-image v-model="visible" :src="src"></for-preview-image>
@@ -36,16 +34,16 @@ app.use(foxPreviewImage); // 注册组件
 
 ## Attrs
 
-| 属性                | 说明                                     | 参数类型               | 默认值                                                          |
-| ------------------- | ---------------------------------------- | ---------------------- | --------------------------------------------------------------- |
+| 属性                | 说明                                     | 参数类型               | 默认值                                                                                  |
+| ------------------- | ---------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------- |
 | src                 | 预览图片的地址                           | `string/Array<string>` |
-| model-value/v-model | 是否显示预览窗口                         | `boolean`              | false                                                           |
-| initial-index       | 默认显示图片的下标(有多张图片时可以设置) | `number`               | 0                                                               |
-| z-index             | 预览窗口的层级                           | `number`               | 9000                                                            |
-| show-toolbar        | 是否显示底部 toolbar                     | `boolean`              | `true`                                                          |
-| enable-teleport     | 启用 teleport 功能                       | `boolean`              | `false`                                                         |
-| append-to           | 控制弹窗的插入位置                       | `HtmlElement/string`   | -                                                               |
-| layout              | 工具栏的布局                             | `string`               | `zoomOut,zoomIn,scale,position,rotateLeft,rotateRight,download` |
+| model-value/v-model | 是否显示预览窗口                         | `boolean`              | false                                                                                   |
+| initial-index       | 默认显示图片的下标(有多张图片时可以设置) | `number`               | 0                                                                                       |
+| z-index             | 预览窗口的层级                           | `number`               | 9000                                                                                    |
+| show-toolbar        | 是否显示底部 toolbar                     | `boolean`              | `true`                                                                                  |
+| enable-teleport     | 启用 teleport 功能                       | `boolean`              | `false`                                                                                 |
+| append-to           | 控制弹窗的插入位置                       | `HtmlElement/string`   | -                                                                                       |
+| layout              | 工具栏的布局                             | `string`               | `zoomOut`,`zoomIn`,<br>`scale`,`position`,<br>`rotateLeft`,`rotateRight`,<br>`download` |
 
 ## 示例
 
