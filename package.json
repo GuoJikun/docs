@@ -6,14 +6,14 @@
     "preview": "vitepress preview --port 9012"
   },
   "devDependencies": {
-    "sass": "^1.77.5",
-    "vitepress": "^1.6.4",
+    "vitepress": "^2.0.0-alpha.19",
     "vue": "^3.4.27"
   },
   "dependencies": {
     "@ivy-design/ce": "^1.7.2",
     "@jkun/watermark-vue": "^1.2.1",
     "fox-preview-image": "^3.4.0",
+    "sass-embedded": "^1.104.0",
     "yak-barcode": "^1.1.1"
   },
   "volta": {
